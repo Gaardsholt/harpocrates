@@ -20,7 +20,6 @@ func setupVault(t *testing.T) {
 
 	// For Renovate, you could drop the Dockerfile and use:
 	// renovate: datasource=docker depName=hashicorp/vault
-	// "hashicorp/vault:1.21",
 	vaultContainer, err := vault.Run(ctx,
 		"hashicorp/vault:1.21",
 		vault.WithToken("unittesttoken"),

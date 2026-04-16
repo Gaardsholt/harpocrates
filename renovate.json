@@ -7,7 +7,7 @@
       "customType": "regex",
       "fileMatch": ["^vault/.*\\.go$"],
       "matchStrings": [
-        "// renovate: datasource=(?<datasource>.*?)\\sdepName=(?<depName>.*?)\\s+.*?\"(?<currentValue>.*?)\""
+        "// renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\n.+?\\n\\s*\"[^:\"]+:(?<currentValue>[^\"]+)\""
       ]
     }
   ]
